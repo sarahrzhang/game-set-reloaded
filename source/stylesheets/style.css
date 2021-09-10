@@ -1,0 +1,230 @@
+/* Overall styling for the entire site */
+body {
+  background-color: mediumpurple;
+  color: #333;
+  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  padding: 18vh 1rem;
+  text-align: center; 
+}
+
+/* Styling for the remaining cards */
+.remaining_heading {
+  text-align: center; 
+}
+
+/* Styling for the game board and buttons */
+#game-of-set {
+  margin: fixed;
+  width: 100%;
+  padding-bottom: 600px;
+}
+
+/* Styling for the game board only */
+#game-board {
+  margin-left: 500px; 
+  float: left; 
+  width: 20%;
+}
+
+/* Styling for the game buttons only */
+#game-buttons {
+  margin-right: 500px; 
+  float: right; 
+  width: 20%;
+}
+
+/* Disabling of buttons for players and checking a set */
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Styling for the tables */
+table {
+  display: inline-block;
+  float: left; 
+
+}
+
+/* Styling for the buttons in the table */
+table.buttons {
+  padding-left: 15px;
+  border-spacing: 0 25px;
+}
+
+/* Styling for the scoreboard in the table */
+table.scoreboard {
+  padding-left: 15px;
+  border-spacing: 15px 25px;
+}
+
+/* Styling for the game of set logo */
+img.resize {
+  height: 250px;
+  width: 250px; 
+}
+
+/* Styling for shading buttons */
+.shaded {
+  filter: brightness(70%); }
+
+/* Styling for the cards */
+.card {
+  width: 100px;
+  height: 120px;
+  padding: 0px;
+  border-radius: 10px;
+  border: 3px solid black; }
+
+/* Shading for the cards selected */
+.card.shaded {
+  filter: brightness(70%); 
+}
+
+/* Styling font and color for titles */
+.title{
+  color: rgb(0, 0, 0);
+  font-family: verdana;
+}
+
+/* Styling font and colors for subtitles */
+.subtitle{
+  color: rgb(0, 0, 0);
+  background-color: #f5d93a;
+  font-family: verdana;
+}
+
+/* Styling for the rules title */
+.playerruletitle {
+  color: rgb(0, 0, 0);
+  background-color: #2feb00;
+  font-family: verdana;
+  text-align: left;
+}
+
+/* Container class for all elements */
+.container{
+  width:1000px;
+  margin: auto;
+}
+
+/* Styling for instructions */
+.instruction{
+  text-align: left;
+  width: 800px;
+  color: rgb(0, 0, 0);
+}
+
+/* Player buttons styling */
+.playerbutton {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #f5d93a;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgb(190, 189, 189);
+  width: 180px;
+}
+
+.playerbutton:hover {
+  background-color: #3e8e41
+}
+
+/* Styling for showing an active player */
+.player:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px rgb(197, 197, 197);
+  transform: translateY(4px);
+}
+
+/* Color styling for button when disabled */
+button :disabled{
+  background: rgb(90, 90, 90);
+}
+/* Home buttons styling */
+.homebutton {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  background-color: #ff2828;
+  border: none;
+  color: #000000;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  font-family: verdana;
+}
+
+.homebutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.homebutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.homebutton:hover span {
+  padding-right: 25px;
+}
+
+.homebutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Styling for coloring of cards remaining */
+.remaining_heading{
+  color: rgb(0, 0, 0);
+  background-color: #f5d93a;
+  font-family: verdana;
+}
+
+.remaining_heading_container{
+  width:1000px;
+  margin: auto;
+}
+
+/* Container for the home button */
+.homebuttoncontainer{
+  width:1000px;
+  display: block;
+  height: 200px;
+  position: absolute;
+  margin: center;
+}
+
+/* Footer styling */
+footer{
+  width: 1000px;;
+  display: inline-block;
+  margin: 2em 0;
+  height: 60px;
+  background-color: #7900eb;
+}
+
+
+.copyright p {
+  text-align: center;
+  color: white;
+  font-size: 1em;
+  letter-spacing: 1px;
+}
